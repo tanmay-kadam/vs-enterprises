@@ -2,6 +2,50 @@
 
 import { useEffect, useState } from "react";
 
+
+/** easeInOutCubic — gentle start, gentle settle */
+const ease = (t: number) =>
+  t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+const NAV_OFFSET = 76;
+
+/** Calm animated jump for in-page anchors (native smooth scroll is abrupt). */
+function useSmoothAnchors() {
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const link = (e.target as HTMLElement).closest?.('a[href^="#"]');
+      if (!link) return;
+      const id = link.getAttribute("href")!.slice(1);
+      if (!id) return;
+      const target = document.getElementById(id);
+      if (!target) return;
+      e.preventDefault();
+
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        target.scrollIntoView();
+        history.pushState(null, "", `#${id}`);
+        return;
+      }
+
+      const startY = window.scrollY;
+      const targetY = target.getBoundingClientRect().top + startY - NAV_OFFSET;
+      const dist = targetY - startY;
+      const duration = Math.min(1200, 450 + Math.abs(dist) * 0.35);
+      const start = performance.now();
+
+      const step = (now: number) => {
+        const p = Math.min(1, (now - start) / duration);
+        window.scrollTo({ top: startY + dist * ease(p) });
+        if (p < 1) requestAnimationFrame(step);
+        else history.pushState(null, "", `#${id}`);
+      };
+      requestAnimationFrame(step);
+    };
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, []);
+}
+
 const links = [
   { href: "#brands", label: "Brands" },
   { href: "#library", label: "Catalogue Library" },
@@ -16,6 +60,7 @@ const Wordmark = ({ className = "" }: { className?: string }) => (
 );
 
 export default function Navbar() {
+  useSmoothAnchors();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
