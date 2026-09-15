@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+
+
 const links = [
   { href: "#brands", label: "Brands" },
   { href: "#library", label: "Catalogue Library" },

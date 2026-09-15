@@ -1,15 +1,13 @@
 "use client";
 
 import { catalogs } from "@/lib/catalogue";
-import { Reveal } from "@/components/Reveal";
-
 export default function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero-shade" aria-hidden="true" />
       <div className="container hero-grid">
         <div className="hero-copy">
-          <Reveal>
+          <div>
             <p className="kicker kicker-gold">Authorised Distributor · Delhi NCR</p>
             <h1 className="hero-title">
               VS <span>Enterprises</span>
@@ -38,10 +36,10 @@ export default function Hero() {
               </a>
 
             </div>
-          </Reveal>
+          </div>
         </div>
 
-        <Reveal className="hero-media" delay={120}>
+        <div className="hero-media">
           <div className="cover-frame">
             <img
               src="/brand-cover.svg"
@@ -55,7 +53,7 @@ export default function Hero() {
             <span className="cover-chip cover-chip-top">{catalogs.length} Catalogues</span>
             <span className="cover-chip cover-chip-bottom">Every Brand · 1 Order Desk</span>
           </div>
-        </Reveal>
+        </div>
       </div>
     </section>
   );
