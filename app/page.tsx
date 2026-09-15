@@ -19,6 +19,7 @@ export default function Home() {
         <CatalogueLibrary />
       </main>
       <CatalogueViewer />
+      <SmoothScroll />
       <Footer />
     </>
   );
