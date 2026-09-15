@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 840" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="12%" r="130%">
+      <stop offset="0" stop-color="#7a1130"/>
+      <stop offset=".45" stop-color="#54091a"/>
+      <stop offset="1" stop-color="#2e040e"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3e3b3"/>
+      <stop offset=".5" stop-color="#c9a02c"/>
+      <stop offset="1" stop-color="#8f6a1a"/>
+    </linearGradient>
+    <linearGradient id="goldsoft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8cf85"/>
+      <stop offset="1" stop-color="#b8892a"/>
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="13" cy="13" r="1" fill="#d9b44a" opacity=".14"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="840" fill="url(#bg)"/>
+  <rect width="600" height="840" fill="url(#dots)"/>
+
+  <!-- large watermark mandala -->
+  <g stroke="url(#goldsoft)" fill="none" opacity=".16">
+    <circle cx="300" cy="430" r="252" stroke-width="1.4"/>
+    <circle cx="300" cy="430" r="210" stroke-width="1" stroke-dasharray="3 6"/>
+    <circle cx="300" cy="430" r="120" stroke-width="1.2"/>
+    <circle cx="300" cy="430" r="40" stroke-width="1.4"/>
+    <g stroke-width="1">
+      <path d="M300 218v-40M300 642v40M88 430H48M552 430h-40"/>
+      <path d="M155 285l-28-28M445 285l28-28M155 575l-28 28M445 575l28 28"/>
+      <path d="M215 245l-20-34M385 245l20-34M215 615l-20 34M385 615l20 34"/>
+    </g>
+  </g>
+
+  <!-- frame -->
+  <rect x="26" y="26" width="548" height="788" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+  <rect x="38" y="38" width="524" height="764" fill="none" stroke="#c9a02c" stroke-opacity=".45" stroke-width="1"/>
+  <g fill="#c9a02c">
+    <circle cx="26" cy="26" r="3.5"/><circle cx="574" cy="26" r="3.5"/>
+    <circle cx="26" cy="814" r="3.5"/><circle cx="574" cy="814" r="3.5"/>
+  </g>
+
+  <!-- header wordmark -->
+  <text x="300" y="118" text-anchor="middle" font-size="52" font-weight="700" letter-spacing="10" fill="url(#gold)">VS</text>
+  <text x="300" y="158" text-anchor="middle" font-size="30" font-style="italic" fill="#e8cf85" letter-spacing="2">Enterprises</text>
+
+  <g stroke="#c9a02c" stroke-width="1" opacity=".8">
+    <line x1="150" y1="184" x2="282" y2="184"/>
+    <line x1="318" y1="184" x2="450" y2="184"/>
+  </g>
+  <rect x="294" y="179" width="12" height="12" transform="rotate(45 300 185)" fill="#c9a02c"/>
+
+  <!-- central medallion -->
+  <g>
+    <circle cx="300" cy="430" r="128" fill="#430714" stroke="url(#gold)" stroke-width="3"/>
+    <circle cx="300" cy="430" r="112" fill="none" stroke="#c9a02c" stroke-opacity=".55" stroke-width="1" stroke-dasharray="2 5"/>
+    <circle cx="300" cy="430" r="96" fill="none" stroke="#c9a02c" stroke-opacity=".35" stroke-width="1"/>
+    <g stroke="#c9a02c" stroke-opacity=".7" stroke-width="1.2" fill="none">
+      <path d="M300 302v-22M300 558v22M172 430h-22M428 430h22M211 341l-16-16M389 341l16-16M211 519l-16 16M389 519l16 16"/>
+      <path d="M248 318l-11-19M352 318l11-19M248 542l-11 19M352 542l11 19"/>
+et -->
+    </g>
+    <text x="300" y="452" text-anchor="middle" font-size="86" font-weight="700" letter-spacing="4" fill="url(#gold)">VS</text>
+    <text x="300" y="492" text-anchor="middle" font-size="16" letter-spacing="6" fill="#e8cf85">ENTERPRISES</text>
+  </g>
+
+  <!-- divider -->
+  <g stroke="#c9a02c" stroke-width="1" opacity=".8">
+    <line x1="196" y1="660" x2="276" y2="660"/>
+    <line x1="324" y1="660" x2="404" y2="660"/>
+  </g>
+  <rect x="294" y="655" width="12" height="12" transform="rotate(45 300 661)" fill="#c9a02c"/>
+  <text x="300" y="724" text-anchor="middle" font-size="22" font-style="italic" fill="#f3e3b3" letter-spacing="1">Catalogue Library</text>
+</svg>
