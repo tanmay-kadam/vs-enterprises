@@ -19,7 +19,6 @@ ul{list-style:none}
 ::selection{background:var(--gold-400);color:var(--maroon-950)}
 :focus-visible{outline:2px solid var(--gold-500);outline-offset:3px}
 .container{width:min(1180px,92%);margin-inline:auto}
-section[id]{scroll-margin-top:84px}
 
 /* Type */
 .kicker{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.34em;font-size:.76rem;font-weight:600;color:var(--gold-700)}
