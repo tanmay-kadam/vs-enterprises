@@ -50,8 +50,6 @@ export default function Hero() {
             />
             <span className="cover-rule cover-rule-tl" aria-hidden="true" />
             <span className="cover-rule cover-rule-br" aria-hidden="true" />
-            <span className="cover-chip cover-chip-top">{catalogs.length} Catalogues</span>
-            <span className="cover-chip cover-chip-bottom">Every Brand · 1 Order Desk</span>
           </div>
         </div>
       </div>

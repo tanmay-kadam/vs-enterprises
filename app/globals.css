@@ -95,8 +95,8 @@ section[id]{scroll-margin-top:84px}
 .hero-title span{font-style:italic;font-weight:500;background:linear-gradient(120deg,var(--gold-300),var(--gold-500));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;margin-top:1.4rem;padding:.55rem 1.1rem;border:1px solid rgba(232,207,133,.5);border-radius:999px;color:var(--gold-300);font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;background:rgba(232,207,133,.08)}
 .hero-tagline{font-family:var(--font-display);font-style:italic;font-size:clamp(1.15rem,2.2vw,1.5rem);color:var(--gold-300);margin-top:.7rem;letter-spacing:.02em}
-.hero-sub{color:rgba(244,236,221,.82);max-width:520px;margin-top:1.4rem;font-size:1.02rem}
-.hero-gift{margin-top:.7rem!important;font-size:.95rem!important}
+.hero-sub{color:rgba(244,236,221,.82);max-width:520px;margin-top:1.5rem;font-size:1.03rem;line-height:1.75}
+.hero-gift{margin-top:1.2rem!important;font-size:.96rem!important;line-height:1.75;color:rgba(244,236,221,.78)!important}
 .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:2.3rem}
 @media(max-width:960px){.hero-trust{margin-inline:auto;gap:1.6rem}.hero-trust li + li{padding-left:1.6rem}.hero-trust{gap:1.6rem}}
 .cover-frame{position:relative;width:min(430px,100%);margin-inline:auto;aspect-ratio:297/420;padding:11px;background:linear-gradient(150deg,rgba(232,207,133,.35),rgba(232,207,133,.06) 55%);border:1px solid rgba(232,207,133,.4);box-shadow:var(--shadow-lg)}
