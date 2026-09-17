@@ -10,7 +10,7 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <main>
         <Hero />
         <Stats />
@@ -19,7 +19,8 @@ export default function Home() {
         <CatalogueLibrary />
       </main>
       <CatalogueViewer />
-      <Footer />
+      <Footer /> */}
+      <h1>Coming Soon</h1>
     </>
   );
 }
