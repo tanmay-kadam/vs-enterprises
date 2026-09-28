@@ -23,6 +23,7 @@ const CATALOGS: Entry[] = [
   { slug: "bmt-festive-2026-27", brand: "BMT", name: "BMT Festive 2026-27", pdf: "/pdf/bmt-festive-2026-27.pdf", pages: 15 },
   { slug: "chef-story-2026-27", brand: "The Chef Story", name: "Chef Story Cookware 2026-27", pdf: "/pdf/chef-story-2026-27.pdf", pages: 8 },
   { slug: "page-no", brand: "Deuralux", name: "Deuralux Product Catalogue 2026-27", pdf: "/pdf/page-no.pdf", pages: 16 },
+  { slug: "small-catalogue", brand: "Anjal", name: "Anjal Small Catalogue", pdf: "/pdf/small-catalogue.pdf", pages: 140 },
   { slug: "catalogue-14102025", brand: "VS Enterprises", name: "Catalogue 14 Oct 2025", pdf: "/pdf/catalogue-14102025.pdf", pages: 6 },
 ];
 
