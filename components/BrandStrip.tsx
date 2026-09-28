@@ -21,7 +21,7 @@ export function BrandStrip() {
           {brands.map((b, i) => (
             <Reveal key={b.id} className="brand-cell" delay={(i % 4) * 70}>
               <div className="brand-cell-inner" role="listitem">
-                <span className="brand-name">{b.name}</span>
+                <span className={`brand-name${b.name.length > 9 ? " is-long" : ""}`}>{b.name}</span>
                 <span className="brand-cap">{b.caption}</span>
               </div>
             </Reveal>

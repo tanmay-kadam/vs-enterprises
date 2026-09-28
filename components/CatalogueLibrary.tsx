@@ -105,7 +105,7 @@ export function CatalogueLibrary() {
                   <Corner pos="tl" />
                   <Corner pos="bl" />
                   <span className="fol-mat" aria-hidden="true" />
-                  {c.pages > 0 && <span className="fol-pages">{c.pages} pages</span>}
+                  <span className="fol-pages">{c.pages} pages</span>
                   <span className="fol-open">Open folio</span>
                 </button>
                 <div className="fol-label">
