@@ -22,7 +22,7 @@ const CATALOGS: Entry[] = [
   { slug: "bmt-festive-2026-27", brand: "BMT", name: "BMT Festive", pdf: "/pdf/bmt-festive-2026-27.pdf", pages: 15 },
   { slug: "chef-story-2026-27", brand: "The Chef Story", name: "Chef Story Cookware", pdf: "/pdf/chef-story-2026-27.pdf", pages: 8 },
   { slug: "page-no", brand: "Deuralux", name: "Deuralux Product Catalogue", pdf: "/pdf/page-no.pdf", pages: 16 },
-  { slug: "small-catalogue", brand: "Anjal", name: "Anjal Small Catalogue", pdf: "/pdf/small-catalogue.pdf", pages: 140 },
+  { slug: "small-catalogue", brand: "Anjali", name: "Anjali Catalogue", pdf: "/pdf/small-catalogue.pdf", pages: 140 },
   { slug: "gebi-catalogue", brand: "Gebi", name: "Gebi Catalogue", pdf: "/pdf/gebi-catalogue.pdf", pages: 6 },
 ];
 
@@ -38,7 +38,7 @@ export interface Brand {
 }
 
 export const brands: Brand[] = [
-  { id: "anjal", name: "Anjal", caption: "Since 1974" },
+  { id: "anjal", name: "Anjali", caption: "Cookware & Kitchenware" },
   { id: "gebi", name: "Gebi", caption: "Your Cleaning Partner" },
   { id: "expo", name: "Expo", caption: "Pure Brass · Steel" },
   { id: "vaya", name: "Vaya", caption: "Wellness & Lifestyle" },
