@@ -22,7 +22,7 @@ export default function Hero() {
             <p className="hero-tagline">Serving retailers &amp; bulk buyers across Delhi NCR</p>
             <p className="hero-sub">
               The exclusive catalogue library for every authorised brand:
-              Expo, Roxx, Agaro, Gebi, Vaya, BMT, Anjal and Deuralux.
+              Expo, Gebi, Vaya, BMT, Anjal and Deuralux.
             </p>
             <p className="hero-sub hero-gift">
               Alongside the trade range, we curate <strong>corporate

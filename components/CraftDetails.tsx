@@ -3,7 +3,7 @@ import { Reveal } from "@/components/Reveal";
 const features = [
   {
     title: "Direct with the principals",
-    text: "Authorised distributor agreements across every brand house (Expo, Roxx, Gebi, Vaya, BMT and more).",
+    text: "Authorised distributor agreements across every brand house (Expo, Gebi, Vaya, BMT and more).",
   },
   {
     title: "One desk for bulk & retail",
