@@ -120,8 +120,10 @@ section[id]{scroll-margin-top:84px}
 /* Brand strip */
 .brands{padding:6.5rem 0 4rem;background:var(--cream-50);border-bottom:1px solid var(--cream-200)}
 .brands-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:0;background:#fff;border:1px solid #ebe7df;border-radius:16px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(53,5,16,.28)}
-.brand-cell{display:flex;border-right:1px solid #ece9e3}
+.brand-cell{display:flex;position:relative}
 .brand-cell-inner{position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2.15rem .8rem;gap:.42rem;transition:background .25s ease;min-width:0;overflow:hidden}
+.brand-cell-inner::after{content:"";position:absolute;right:0;top:0;bottom:0;width:1px;background:#ece9e3;pointer-events:none}
+.brand-cell:nth-child(8n) .brand-cell-inner::after{display:none}
 .brand-cell:nth-child(8n){border-right:none}
 .brand-cell-inner:hover{background:#fdfaf3}
 .brand-name{font-family:var(--font-display);font-weight:600;font-size:clamp(1rem,1.35vw,1.45rem);color:var(--maroon-800);line-height:1.05;white-space:nowrap;max-width:100%}
@@ -129,8 +131,8 @@ section[id]{scroll-margin-top:84px}
 .brand-cap{font-size:clamp(.5rem,.58vw,.62rem);letter-spacing:.1em;font-weight:700;text-transform:uppercase;color:var(--gold-700);margin-top:.45rem;text-align:center;line-height:1.5;max-width:100%;overflow-wrap:break-word;word-break:normal;padding-inline:.15rem}
 
 @media(max-width:1180px){.brand-name{font-size:1.15rem}.brand-name.is-long{font-size:.95rem}}
-@media(max-width:900px){.brands-grid{grid-template-columns:repeat(4,1fr)}.brand-cell:nth-child(4n){border-right:none}.brand-cell:nth-child(n+5){border-top:1px solid var(--cream-200)}}
-@media(max-width:560px){.brands-grid{grid-template-columns:repeat(2,1fr)}.brand-cell{border-right:1px solid #ece9e3;border-top:1px solid var(--cream-200)}.brand-cell:nth-child(-n+2){border-top:none}.brand-cell:nth-child(2n){border-right:none}}
+@media(max-width:900px){.brands-grid{grid-template-columns:repeat(4,1fr)}.brand-cell:nth-child(4n) .brand-cell-inner::after{display:none}.brand-cell:nth-child(n+5){border-top:1px solid #ece9e3}}
+@media(max-width:560px){.brands-grid{grid-template-columns:repeat(2,1fr)}.brand-cell{border-top:1px solid #ece9e3}.brand-cell:nth-child(-n+2){border-top:none}.brand-cell:nth-child(2n) .brand-cell-inner::after{display:none}}
 
 /* Catalogue library */
 .library{padding:6rem 0;position:relative;background:
