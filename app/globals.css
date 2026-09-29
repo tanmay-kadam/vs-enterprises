@@ -202,13 +202,26 @@ section[id]{scroll-margin-top:84px}
 .craft-num{font-family:var(--font-display);font-weight:600;font-size:1.45rem;color:var(--gold-400);line-height:1.15;min-width:38px}
 .craft-item h4{font-family:var(--font-display);font-size:1.3rem;color:var(--cream-50);font-weight:600;letter-spacing:.01em}
 .craft-item p{font-size:.92rem;color:rgba(244,236,221,.72);margin-top:.3rem;line-height:1.65;max-width:420px}
+/* overlapping cascade of brand covers, hover lifts each */
 .craft-visual{display:flex;flex-direction:column;align-items:center}
-.craft-stack{position:relative;width:100%;height:392px}
-.craft-leaf{position:absolute;width:188px;border-radius:4px;border:1px solid rgba(232,207,133,.5);box-shadow:0 20px 46px rgba(0,0,0,.5);background:#fff;transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s ease}
-.craft-leaf-a{left:4%;top:6%;transform:rotate(-8deg)}
-.craft-leaf-b{left:33%;top:0;transform:rotate(-1deg);z-index:2;width:200px;box-shadow:0 26px 54px rgba(0,0,0,.6)}
-.craft-leaf-c{left:61%;top:9%;transform:rotate(7deg)}
-.craft-leaf:hover{transform:rotate(0) translateY(-8px);z-index:5;box-shadow:0 30px 60px rgba(0,0,0,.65)}
+.craft-stack{position:relative;width:100%;max-width:560px;height:440px}
+.craft-leaf{position:absolute;width:196px;margin:0;background:linear-gradient(180deg,#fffdf7,#fdf8ec);border:1px solid rgba(232,207,133,.55);border-radius:8px;padding:6px 6px 4px;box-shadow:0 18px 40px -14px rgba(0,0,0,.6);transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s ease,z-index 0s}
+.craft-leaf:hover{z-index:30;transform:translateY(-22px) rotate(0deg) scale(1.05);box-shadow:0 34px 60px -16px rgba(0,0,0,.8)}
+.craft-leaf:hover{margin-bottom:34px}
+.craft-leaf-cover{position:relative;display:block;border-radius:4px;overflow:hidden;border:1px solid rgba(232,207,133,.35)}
+.craft-leaf-cover img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;display:block}
+.craft-leaf-brand{opacity:0;transition:opacity .3s ease;display:block;text-align:center;font-family:var(--font-display);font-style:italic;font-size:.85rem;color:var(--gold-300);padding:.35rem 0 0}
+.craft-leaf:hover .craft-leaf-brand{opacity:1}
+.craft-leaf-name{position:absolute;left:0;right:0;bottom:0;display:block;text-align:center;font-family:var(--font-display);font-weight:600;font-size:1.02rem;color:var(--gold-300);letter-spacing:.06em;padding:.55rem .3rem .5rem;background:linear-gradient(180deg,transparent,rgba(42,4,12,.88) 70%)}
+.leaf-1{left:0;top:38px;transform:rotate(-9deg);z-index:1}
+.leaf-2{left:10.2%;top:23px;transform:rotate(-6deg);z-index:2}
+.leaf-3{left:24.4%;top:11px;transform:rotate(-3deg);z-index:3}
+.leaf-4{left:38.6%;top:5px;transform:rotate(0deg);z-index:4}
+.leaf-5{left:52.8%;top:11px;transform:rotate(3deg);z-index:3}
+.leaf-6{left:67%;top:23px;transform:rotate(6deg);z-index:2}
+.leaf-7{right:0;top:38px;transform:rotate(9deg);z-index:1}
+@media(max-width:960px){.craft-stack{height:400px;max-width:420px}.craft-leaf{width:158px}}
+@media(max-width:480px){.craft-stack{height:330px;max-width:330px}.craft-leaf{width:128px}}
 .craft-quote{margin-top:2.8rem;text-align:center}
 .craft-quote blockquote{font-family:var(--font-display);font-style:italic;font-weight:500;font-size:clamp(1.35rem,2.6vw,1.8rem);color:var(--gold-300);line-height:1.4}
 .craft-quote figcaption{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(244,236,221,.78);margin-top:.9rem}

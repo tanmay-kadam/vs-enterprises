@@ -1,3 +1,4 @@
+import { catalogs } from "@/lib/catalogue";
 import { Reveal } from "@/components/Reveal";
 
 const features = [
@@ -7,7 +8,7 @@ const features = [
   },
   {
     title: "One desk for bulk & retail",
-    text: "Retail orders, institution supplies and event quantities handled from a single counter, pricing, dispatch and follow-up in one call.",
+    text: "Retail orders, institution supplies and event quantities handled from a single counter: pricing, dispatch and follow-up in one call.",
   },
   {
     title: "Catalogues, fully digital",
@@ -15,10 +16,15 @@ const features = [
   },
 ];
 
-const leaves = [
-  { src: "/catalogue/expo-2026/p01.jpg", cls: "craft-leaf-a", alt: "Expo Premium catalogue cover" },
-  { src: "/catalogue/expo-2026/p04.jpg", cls: "craft-leaf-b", alt: "Virasat etching dinner set, catalogue page" },
-  { src: "/catalogue/expo-2026/p13.jpg", cls: "craft-leaf-c", alt: "Munch Magic PVD gold snack set, catalogue page" },
+/** The best product page from each brand house (curated). */
+const covers: { brand: string; cover: string; pos: string }[] = [
+  { brand: "Expo", cover: "/brand-best/Expo.jpg", pos: "leaf-1" },
+  { brand: "Gebi", cover: "/brand-best/Gebi.jpg", pos: "leaf-2" },
+  { brand: "Vaya", cover: "/brand-best/Vaya.jpg", pos: "leaf-3" },
+  { brand: "BMT", cover: "/brand-best/BMT.jpg", pos: "leaf-4" },
+  { brand: "Anjali", cover: "/brand-best/Anjali.jpg", pos: "leaf-5" },
+  { brand: "Deuralux", cover: "/brand-best/Deuralux.jpg", pos: "leaf-6" },
+  { brand: "Chef Story", cover: "/brand-best/Chef_Story.jpg", pos: "leaf-7" },
 ];
 
 export function CraftDetails() {
@@ -32,8 +38,8 @@ export function CraftDetails() {
             <h2 className="craft-title">Details that carry the ritual</h2>
             <p className="craft-lead">
               Every catalogue in this library is the working document of a
-              three-generation distributor, capturing the finishes, sizes and serving
-              rituals behind each collection, kept current for the trade.
+              three-generation distributor, capturing the finishes, sizes and
+              serving rituals behind each collection.
             </p>
             <ul className="craft-list">
               {features.map((f, i) => (
@@ -50,14 +56,14 @@ export function CraftDetails() {
 
           <Reveal className="craft-visual" delay={120}>
             <div className="craft-stack">
-              {leaves.map((l) => (
-                <img
-                  key={l.cls}
-                  src={l.src}
-                  alt={l.alt}
-                  className={`craft-leaf ${l.cls}`}
-                  loading="lazy"
-                />
+              {covers.map((c) => (
+                <figure key={c.brand} className={`craft-leaf ${c.pos}`} title={c.brand}>
+                  <span className="craft-leaf-cover">
+                    <img src={c.cover} alt={`${c.brand} catalogue`} />
+                    <span className="craft-leaf-name">{c.brand}</span>
+                  </span>
+                  <figcaption className="craft-leaf-brand">{c.brand}</figcaption>
+                </figure>
               ))}
             </div>
             <figure className="craft-quote">
@@ -65,7 +71,7 @@ export function CraftDetails() {
                 “One distributor. Every brand.
                 <br /> Every page turned for you.”
               </blockquote>
-              <figcaption>- VS Enterprises · Authorised Distributor</figcaption>
+              <figcaption>— VS Enterprises · Authorised Distributor</figcaption>
             </figure>
           </Reveal>
         </div>

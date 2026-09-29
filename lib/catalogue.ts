@@ -43,8 +43,8 @@ export const brands: Brand[] = [
   { id: "expo", name: "Expo", caption: "Pure Brass · Steel" },
   { id: "vaya", name: "Vaya", caption: "Wellness & Lifestyle" },
   { id: "bmt", name: "bmt", caption: "Thermoscape" },
-  { id: "deuralux", name: "Deuralux", caption: "Premium Gifts" },
-  { id: "chef-story", name: "Chef Story", caption: "Cookware" },
+  { id: "deuralux", name: "Deuralux", caption: "Appliances" },
+  { id: "chef-story", name: "The chef story", caption: "Cookware" },
 ];
 
 export const COMPANY = {
