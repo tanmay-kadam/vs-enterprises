@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 const features = [
   {
     title: "Direct with the principals",
-    text: "Authorised distributor agreements across every brand house (Expo, Gebi, Vaya, BMT, Anjali, Deuralux and Chef Story).",
+    text: "Authorised distributor agreements across every brand house (Expo, Gebi, Vaya, BMT, Anjali, Deuralux and The chef story).",
   },
   {
     title: "One desk for bulk & retail",
@@ -12,7 +12,7 @@ const features = [
   },
   {
     title: "Catalogues, fully digital",
-    text: "Every page of every print catalogue is turned into a swipeable online flipbook you can share with buyers and quote from directly.",
+    text: "Every print catalogue lives as an online catalogue viewer: crisp page images you can slide through and download as a PDF, right from the site.",
   },
 ];
 
@@ -24,7 +24,7 @@ const covers: { brand: string; cover: string; pos: string }[] = [
   { brand: "BMT", cover: "/brand-best/BMT.jpg", pos: "leaf-4" },
   { brand: "Anjali", cover: "/brand-best/Anjali.jpg", pos: "leaf-5" },
   { brand: "Deuralux", cover: "/brand-best/Deuralux.jpg", pos: "leaf-6" },
-  { brand: "Chef Story", cover: "/brand-best/Chef_Story.jpg", pos: "leaf-7" },
+  { brand: "The chef story", cover: "/brand-best/Chef_Story.jpg", pos: "leaf-7" },
 ];
 
 export function CraftDetails() {
