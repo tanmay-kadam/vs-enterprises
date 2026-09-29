@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: "VS Enterprises · Authorised Distributor Catalogue Library",
   description:
-    "Catalogue library of VS Enterprises, authorised distributor in Wazirpur Industrial Area, New Delhi. Brass and steel dinnerware, glassware, gift sets and corporate gifting across Expo, Gebi, Vaya, BMT, Anjali and Deuralux.",
+    "Catalogue library of VS Enterprises, authorised distributor in Wazirpur Industrial Area, New Delhi. Brass and steel dinnerware, glassware, gift sets and corporate gifting across Expo, Gebi, Vaya, BMT, Anjali, Deuralux and Chef Story.",
   alternates: { canonical: SITE },
   openGraph: {
     type: "website",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "VS Enterprises",
     title: "VS Enterprises · Authorised Distributor Catalogue Library",
     description:
-      "Brass and steel dinnerware, glassware, gift sets and corporate gifting across Expo, Gebi, Vaya, BMT, Anjali and Deuralux.",
+      "Brass and steel dinnerware, glassware, gift sets and corporate gifting across Expo, Gebi, Vaya, BMT, Anjali, Deuralux and Chef Story.",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "VS Enterprises catalogue library" }],
   },
   twitter: {
