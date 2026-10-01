@@ -119,22 +119,21 @@ section[id]{scroll-margin-top:84px}
 
 /* Brand strip */
 .brands{padding:6.5rem 0 4rem;background:var(--cream-50);border-bottom:1px solid var(--cream-200)}
-.brands-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:0;background:#fff;border:1px solid #ebe7df;border-radius:16px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(53,5,16,.28)}
+.brands-grid{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:0;background:#fff;border:1px solid #ebe7df;border-radius:16px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(53,5,16,.28)}
 .brand-cell{display:flex;position:relative}
 .brand-cell-inner{position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2.15rem .8rem;gap:.42rem;transition:background .25s ease;min-width:0;overflow:hidden}
 .brand-cell-inner::after{content:"";position:absolute;right:0;top:0;bottom:0;width:1px;background:#ece9e3;pointer-events:none}
-.brand-cell:nth-child(7n) .brand-cell-inner::after{display:none}
+.brand-cell:nth-child(9n) .brand-cell-inner::after{display:none}
 .brand-cell:last-child .brand-cell-inner::after{display:none}
 
 .brand-cell:nth-child(8n){border-right:none}
 .brand-cell-inner:hover{background:#fdfaf3}
-.brand-name{font-family:var(--font-display);font-weight:600;font-size:clamp(1rem,1.35vw,1.45rem);color:var(--maroon-800);line-height:1.05;white-space:nowrap;max-width:100%}
-.brand-name.is-long{font-size:clamp(.9rem,1.15vw,1.1rem);letter-spacing:-.015em}
+.brand-name{font-family:var(--font-display);font-weight:600;font-size:clamp(.95rem,1.28vw,1.4rem);color:var(--maroon-800);line-height:1.05;white-space:nowrap;max-width:100%}
 .brand-cap{font-size:clamp(.5rem,.58vw,.62rem);letter-spacing:.1em;font-weight:700;text-transform:uppercase;color:var(--gold-700);margin-top:.45rem;text-align:center;line-height:1.5;max-width:100%;overflow-wrap:break-word;word-break:normal;padding-inline:.15rem}
 
-@media(max-width:1180px){.brand-name{font-size:1.15rem}.brand-name.is-long{font-size:.95rem}}
+@media(max-width:1180px){.brand-name{font-size:1.1rem}}
 @media(max-width:900px){.brands-grid{grid-template-columns:repeat(4,1fr)}.brand-cell:nth-child(4n) .brand-cell-inner::after{display:none}.brand-cell:nth-child(n+5){border-top:1px solid #ece9e3}}
-@media(max-width:560px){.brands-grid{grid-template-columns:repeat(2,1fr)}.brand-cell{border-top:1px solid #ece9e3}.brand-cell:nth-child(-n+2){border-top:none}.brand-cell:nth-child(2n) .brand-cell-inner::after{display:none}}
+@media(max-width:560px){.brands-grid{grid-template-columns:repeat(3,1fr)}.brand-cell{border-top:1px solid #ece9e3}.brand-cell:nth-child(-n+3){border-top:none}.brand-cell:nth-child(2n) .brand-cell-inner::after{display:none}}
 
 /* Catalogue library */
 .library{padding:6rem 0;position:relative;background:
@@ -203,9 +202,18 @@ section[id]{scroll-margin-top:84px}
 .craft-item h4{font-family:var(--font-display);font-size:1.3rem;color:var(--cream-50);font-weight:600;letter-spacing:.01em}
 .craft-item p{font-size:.92rem;color:rgba(244,236,221,.72);margin-top:.3rem;line-height:1.65;max-width:420px}
 /* overlapping cascade of brand covers, hover lifts each */
+.leaf-1{left:-1.00%;top:30px;transform:rotate(-12deg);z-index:1}
+.leaf-2{left:8.25%;top:44px;transform:rotate(-9deg);z-index:2}
+.leaf-3{left:17.50%;top:58px;transform:rotate(-6deg);z-index:3}
+.leaf-4{left:26.75%;top:72px;transform:rotate(-3deg);z-index:4}
+.leaf-5{left:36.00%;top:86px;transform:rotate(0deg);z-index:5}
+.leaf-6{left:45.25%;top:72px;transform:rotate(3deg);z-index:4}
+.leaf-7{left:54.50%;top:58px;transform:rotate(6deg);z-index:3}
+.leaf-8{left:63.75%;top:44px;transform:rotate(9deg);z-index:2}
+.leaf-9{left:73.00%;top:30px;transform:rotate(12deg);z-index:1}
 .craft-visual{display:flex;flex-direction:column;align-items:center}
-.craft-stack{position:relative;width:100%;max-width:560px;height:440px}
-.craft-leaf{position:absolute;width:196px;margin:0;background:linear-gradient(180deg,#fffdf7,#fdf8ec);border:1px solid rgba(232,207,133,.55);border-radius:8px;padding:6px 6px 4px;box-shadow:0 18px 40px -14px rgba(0,0,0,.6);transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s ease,z-index 0s}
+.craft-stack{position:relative;width:100%;max-width:600px;height:440px}
+.craft-leaf{position:absolute;width:148px;margin:0;background:linear-gradient(180deg,#fffdf7,#fdf8ec);border:1px solid rgba(232,207,133,.55);border-radius:8px;padding:6px 6px 4px;box-shadow:0 18px 40px -14px rgba(0,0,0,.6);transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s ease,z-index 0s}
 .craft-leaf:hover{z-index:30;transform:translateY(-22px) rotate(0deg) scale(1.05);box-shadow:0 34px 60px -16px rgba(0,0,0,.8)}
 .craft-leaf:hover{margin-bottom:34px}
 .craft-leaf-cover{position:relative;display:block;border-radius:4px;overflow:hidden;border:1px solid rgba(232,207,133,.35)}
@@ -213,13 +221,6 @@ section[id]{scroll-margin-top:84px}
 .craft-leaf-brand{opacity:0;transition:opacity .3s ease;display:block;text-align:center;font-family:var(--font-display);font-style:italic;font-size:.85rem;color:var(--gold-300);padding:.35rem 0 0}
 .craft-leaf:hover .craft-leaf-brand{opacity:1}
 .craft-leaf-name{position:absolute;left:0;right:0;bottom:0;display:block;text-align:center;font-family:var(--font-display);font-weight:600;font-size:1.02rem;color:var(--gold-300);letter-spacing:.06em;padding:.55rem .3rem .5rem;background:linear-gradient(180deg,transparent,rgba(42,4,12,.88) 70%)}
-.leaf-1{left:0;top:38px;transform:rotate(-9deg);z-index:1}
-.leaf-2{left:10.2%;top:23px;transform:rotate(-6deg);z-index:2}
-.leaf-3{left:24.4%;top:11px;transform:rotate(-3deg);z-index:3}
-.leaf-4{left:38.6%;top:5px;transform:rotate(0deg);z-index:4}
-.leaf-5{left:52.8%;top:11px;transform:rotate(3deg);z-index:3}
-.leaf-6{left:67%;top:23px;transform:rotate(6deg);z-index:2}
-.leaf-7{right:0;top:38px;transform:rotate(9deg);z-index:1}
 @media(max-width:960px){.craft-stack{height:400px;max-width:420px}.craft-leaf{width:158px}}
 @media(max-width:480px){.craft-stack{height:330px;max-width:330px}.craft-leaf{width:128px}}
 .craft-quote{margin-top:2.8rem;text-align:center}

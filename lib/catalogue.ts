@@ -23,6 +23,8 @@ const CATALOGS: Entry[] = [
   { slug: "chef-story-2026-27", brand: "The chef story", name: "The chef story Cookware", pdf: "/pdf/chef-story-2026-27.pdf", pages: 8 },
   { slug: "page-no", brand: "Deuralux", name: "Deuralux Product Catalogue", pdf: "/pdf/page-no.pdf", pages: 16 },
   { slug: "small-catalogue", brand: "Anjali", name: "Anjali Catalogue", pdf: "/pdf/small-catalogue.pdf", pages: 140 },
+  { slug: "napoleon-grills", brand: "Napoleon", name: "Napoleon Gourmet Grills", pdf: "/pdf/napoleon-grills.pdf", pages: 4 },
+  { slug: "agaro-catalogue", brand: "Agaro", name: "Agaro Product Catalogue", pdf: "/pdf/agaro-catalogue.pdf", pages: 18 },
   { slug: "gebi-catalogue", brand: "Gebi", name: "Gebi Catalogue", pdf: "/pdf/gebi-catalogue.pdf", pages: 6 },
 ];
 
@@ -39,11 +41,13 @@ export interface Brand {
 
 export const brands: Brand[] = [
   { id: "anjal", name: "Anjali", caption: "Cookware & Kitchenware" },
+  { id: "agaro", name: "Agaro", caption: "Premium Appliances" },
   { id: "gebi", name: "Gebi", caption: "Your Cleaning Partner" },
   { id: "expo", name: "Expo", caption: "Pure Brass · Steel" },
   { id: "vaya", name: "Vaya", caption: "Wellness & Lifestyle" },
   { id: "bmt", name: "bmt", caption: "Thermoscape" },
   { id: "deuralux", name: "Deuralux", caption: "Appliances" },
+  { id: "napoleon", name: "Napoleon", caption: "Gourmet Grills" },
   { id: "chef-story", name: "The chef story", caption: "Cookware" },
 ];
 

@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 const features = [
   {
     title: "Direct with the principals",
-    text: "Authorised distributor agreements across every brand house (Expo, Gebi, Vaya, BMT, Anjali, Deuralux and The chef story).",
+    text: "Authorised distributor agreements across every brand house (Expo, Agaro, Gebi, Vaya, BMT, Anjali, Deuralux, Napoleon and The chef story).",
   },
   {
     title: "One desk for bulk & retail",
@@ -19,12 +19,14 @@ const features = [
 /** The best product page from each brand house (curated). */
 const covers: { brand: string; cover: string; pos: string }[] = [
   { brand: "Expo", cover: "/brand-best/Expo.jpg", pos: "leaf-1" },
-  { brand: "Gebi", cover: "/brand-best/Gebi.jpg", pos: "leaf-2" },
-  { brand: "Vaya", cover: "/brand-best/Vaya.jpg", pos: "leaf-3" },
-  { brand: "BMT", cover: "/brand-best/BMT.jpg", pos: "leaf-4" },
-  { brand: "Anjali", cover: "/brand-best/Anjali.jpg", pos: "leaf-5" },
-  { brand: "Deuralux", cover: "/brand-best/Deuralux.jpg", pos: "leaf-6" },
-  { brand: "The chef story", cover: "/brand-best/Chef_Story.jpg", pos: "leaf-7" },
+  { brand: "Agaro", cover: "/brand-best/Agaro.jpg", pos: "leaf-2" },
+  { brand: "Gebi", cover: "/brand-best/Gebi.jpg", pos: "leaf-3" },
+  { brand: "Vaya", cover: "/brand-best/Vaya.jpg", pos: "leaf-4" },
+  { brand: "BMT", cover: "/brand-best/BMT.jpg", pos: "leaf-5" },
+  { brand: "Anjali", cover: "/brand-best/Anjali.jpg", pos: "leaf-6" },
+  { brand: "Deuralux", cover: "/brand-best/Deuralux.jpg", pos: "leaf-7" },
+  { brand: "Napoleon", cover: "/brand-best/Napoleon.jpg", pos: "leaf-8" },
+  { brand: "The chef story", cover: "/brand-best/Chef_Story.jpg", pos: "leaf-9" },
 ];
 
 export function CraftDetails() {

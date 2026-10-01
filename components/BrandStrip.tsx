@@ -25,9 +25,7 @@ export function BrandStrip() {
           {brands.map((b) => (
             <div key={b.id} className="brand-cell" role="listitem">
               <div className="brand-cell-inner">
-                <span className={`brand-name${b.name.length > 9 ? " is-long" : ""}`}>
-                  {b.name}
-                </span>
+                <span className="brand-name">{b.name}</span>
                 <span className="brand-cap">{b.caption}</span>
               </div>
             </div>
